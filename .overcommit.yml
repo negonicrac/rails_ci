@@ -57,12 +57,6 @@ PreCommit:
   ShellCheck:
     enabled:             true
 
-PrePush:
-  GitLfs:
-    enabled:             true
-    required_executable: 'git-lfs'
-    flags:               ['pre-push']
-
 PostCheckout:
   IndexTags:
     enabled:             true
@@ -80,6 +74,11 @@ PostRewrite:
     enabled:             true
 
 PrePush:
+  GitLfs:
+    enabled:             true
+    required_executable: 'git-lfs'
+    flags:               ['pre-push']
+
   ProtectedBranches:
     enabled:             true
     branch_patterns:
