@@ -1,4 +1,4 @@
-FROM ruby:2.5.0-slim
+FROM ruby:2.5.1-slim
 MAINTAINER Louis Taylor <louis@negonicrac.com>
 
 ENV LANG=C.UTF-8
